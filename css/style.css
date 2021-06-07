@@ -1,0 +1,109 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	box-sizing: border-box;
+}
+
+
+
+body {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1.5fr 6fr;
+	height: 100%;
+	font-family: sans-serif;
+}
+
+
+form {
+	grid-row:2 / 3;
+	align-self: start;
+	justify-self: center;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-auto-flow: column;
+	align-items: center;
+	justify-items: center;
+	column-gap: 20px;
+}
+
+
+form input {
+margin:10px 0;
+padding:10px ;
+border:unset;
+border-bottom: 2px solid #ddd;
+}
+form select {
+margin:10px 0;
+padding:10px 0;
+border: 2px solid #ddd;
+border-radius: 3px;
+outline: none;
+}
+
+.add {
+	grid-row: 2 / 3;
+	margin-right: 50px;
+}
+
+form button {
+	padding:10px 0;
+	background: blue;
+    border:unset;
+    color:white;
+    font-weight: bold;
+    font-size:20px;
+    width: 100px;
+}
+
+form .msg {
+	margin:10px 0 0 0;
+}
+
+form .msg a{
+	margin:10px 0 0 0;
+	color:grey;
+	font-weight: bold;
+	text-decoration: none
+}
+
+
+.session__message {
+	color:white;
+	margin-top:20px;
+	padding:10px 20px;
+	background-color: orange;
+    
+}
+
+.accept {
+	color:white;
+	margin-top:20px;
+	padding:10px 20px;
+	background-color: green;
+}
+
+.cards__container {
+	grid-row: 3 / 4;
+	padding: 0 200px;
+}
+.cards__container .cards {
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    gap:20px;
+}
+
+.cards__container .cards figure {
+	width: 100%;
+
+}
+
+.cards__container .cards figure img{
+	width: 100%;
+   
+}
+.cards__container .cards .content_text .title{
+    
+}
